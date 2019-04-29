@@ -22,10 +22,7 @@ namespace Competitive_Programming
         // ユークリッドの互除法の解説：https://www.studyplus.jp/412
         public static int Gcd(int x, int y)
         {
-            if (y < x)
-            {
-                return Gcd(y, x);
-            }
+            if (y < x) return Gcd(y, x);
             while (y != 0)
             {
                 var remainder = y % x;
